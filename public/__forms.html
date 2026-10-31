@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="utf-8" /><meta name="robots" content="noindex" /><title>Forms</title></head>
+  <body>
+    <!-- Hidden form definitions so Netlify Forms can detect the site's forms at deploy time.
+         The real forms live in src/routes/join.tsx and src/routes/club.tsx. Keep field names in sync. -->
+    <form name="join" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="age" />
+      <input name="email" type="email" />
+      <input name="school" />
+      <input name="city" />
+      <textarea name="reptiles"></textarea>
+      <input name="feeders" />
+      <textarea name="notes"></textarea>
+    </form>
+    <form name="club" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="grade" />
+      <input name="school" />
+      <input name="email" type="email" />
+      <input name="parent_email" type="email" />
+      <input name="has_reptile" />
+      <textarea name="reptile_details"></textarea>
+      <textarea name="notes"></textarea>
+    </form>
+  </body>
+</html>
