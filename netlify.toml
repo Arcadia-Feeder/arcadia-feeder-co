@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist/client"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NPM_FLAGS = "--legacy-peer-deps"
+
+# Pretty URLs: /faq -> /faq/index.html (handled automatically by Netlify).
+# Anything unknown falls through to Netlify's 404 page.
